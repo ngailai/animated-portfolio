@@ -1,0 +1,83 @@
+@import '../../app.scss';
+
+.navbar {
+    height: 100px;
+    .wrapper {
+        max-width: 1366px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        @include mobile {
+            justify-content: flex-end;
+            padding: 30px;
+        }
+        @include tablet {
+            justify-content: flex-end;
+            padding: 30px;
+        }
+
+        span {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 24px;
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            @include mobile {
+                display: none;
+                cursor: pointer;
+            }
+
+            @include tablet {
+                display: none;
+                cursor: pointer;
+            }
+        }
+        .social {
+            display: flex;
+            gap: 20px;
+            @include mobile {
+                gap: 10px;
+                height: 28px;
+                padding-left: 100px;
+                justify-content: flex-end;
+                cursor: pointer;
+                padding-block: 1px;
+            }
+
+            @include tablet {
+                gap: 10px;
+                height: 28px;
+                padding-left: 100px;
+                justify-content: flex-end;
+                cursor: pointer;
+                padding-block: 1px;
+            }
+            img {
+                height: 28px;
+                width: 28px;
+                justify-content: flex-end;
+                @include mobile {
+                    width: 30px;
+                    height: 30px;
+                    size: 0caps;
+                    display: flex;
+                    padding-left: 0px;
+                    margin-left: 0px;
+                    padding-right: 2px;
+                }
+
+                @include tablet {
+                    width: 30px;
+                    height: 30px;
+                    size: 0caps;
+                    display: flex;
+                    padding-left: 0px;
+                    margin-left: 0px;
+                    padding-right: 2px;
+                }
+            }
+        }
+    }
+}
